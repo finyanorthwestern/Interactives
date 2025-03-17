@@ -48,7 +48,12 @@ body {
     justify-content: center;
     margin-top: 10px;
     align-items: center;
+
 }
+.flex-container p {
+    font-size: medium;
+    }
+
 .portrait {
     font-family: inter;
     text-align: center;
@@ -225,7 +230,7 @@ body {
     background-color: rgb(66, 104, 133);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (orientation: portrait) {
     .story-cards {
         flex-direction: column;
     }
@@ -236,4 +241,8 @@ body {
     .story-image {
         max-width: 100%;
     }
+    .flex-container {
+        flex-direction: column;
+    }
+    
 }
