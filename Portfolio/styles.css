@@ -1,276 +1,322 @@
+/* Color Palate */
+:root {
+  --bg-color: #faf7f2;
+  --bg-accent-color: rgb(251, 217, 176);
+
+  --primary-color: rgb(86, 124, 153);
+}
+
 html,
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #faf7f2;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+a {
+	color: var(--primary-color);
 }
 
 p {
-	font-size: large;
+  font-size: large;
+  line-height: 2;
 }
 .navbar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(251, 217, 176);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--bg-accent-color);
 }
 .navbar a {
-    display: block;
-    color: #000000;
-    font-family: inter;
-    text-align: center;
-    padding: 14px 16px; /* Mostly for the hover */
-    text-decoration: none;
-    font-size: 20px;
-    display: inline-block;
+  display: block;
+  color: #000000;
+  font-family: inter;
+  text-align: center;
+  padding: 14px 16px; /* Adds extra room for selecting */
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
 }
 .navbar a:hover {
-    background: rgb(86, 124, 153);
-    color: rgb(255, 255, 255);
+  background: var(--primary-color);
+  color: white;
 }
 .header {
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
-    margin: 80px auto 0;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  margin: 80px auto 0;
 }
 
 .header h1 {
-    font-family: quicksand;
-    font-size: 4rem;
-    margin-bottom: 1rem;
+  font-family: quicksand;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+	font-style: italic;
+	position: absolute;
+	width: 100%;
+}
+.footer > .subtext{
+	margin-bottom: 0;
+	width: 100%;
+	text-align: center;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
 }
 
 .flex-container.column {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me {
-	font-family: inter;
-	text-align: center;
-	font-size: 30px;
-	margin: auto
+  font-family: inter;
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
 }
-.about-me > .blurb{
-	 inline-size:400px;
-	margin: 0px 50px;
+.about-me > .blurb {
+  inline-size: 400px;
+  line-height: 2;
+  margin: 0px 50px;
 }
 
 .flex-container p {
-    font-size: medium;
-    }
+  font-size: medium;
+}
 
 .portrait {
-    font-family: inter;
-    text-align: center;
-    inline-size: 400px;
-    margin-top: 10px;
-    font-size: 30px;
+  font-family: inter;
+  text-align: center;
+  inline-size: 400px;
+  margin-top: 10px;
+  font-size: 30px;
 }
 
 .contact-container {
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
-    margin: 80px auto 0;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  margin: 80px auto 0;
 }
 
 .contact-container h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .email {
-    font-size: 2.5rem;
-    color: rgb(86, 124, 153);
-    margin-bottom: 1.5rem;
-    text-decoration: none;
-    display: block;
+  font-size: 2.5rem;
+  color: rgb(86, 124, 153);
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  display: block;
 }
 
 .subtext {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 3rem;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 3rem;
 }
 
 .contact-container form {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 #contactForm {
-	width: 95%;
-	margin: auto;
+  width: 95%;
+  margin: auto;
 }
 
 .form-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
 }
 
 .form-field {
-    flex: 1;
-    text-align: left;
+  flex: 1;
+  text-align: left;
 }
 
 .contact-container input,
 .contact-container textarea {
-    padding: 10px 0px;
-    border: none;
-    border-bottom: 1px solid rgb(86, 124, 153);
-    background-color: transparent;
-    width: 100%;
-    font-size: 1rem;
-    outline: none;
+  padding: 10px 0px;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  background-color: transparent;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
 }
 
 .contact-container label {
-    text-align: left;
-    display: block;
-    margin-bottom: 0.5rem;
-    color: rgb(86, 124, 153);
+  text-align: left;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
 }
 
 .contact-container textarea {
-    min-height: 150px;
-    resize: vertical;
+  min-height: 150px;
+  resize: vertical;
 }
 
 .submit-btn {
-    background-color: transparent;
-    color: rgb(86, 124, 153);
-    border: 2px solid rgb(86, 124, 153);
-    border-radius: 30px;
-    padding: 10px 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    margin-top: 1rem;
-    float: right;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+  float: right;
 }
 
 .submit-btn:hover {
-    background-color: rgb(86, 124, 153);
-    color: white;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 1rem;
 }
 
 .social-icon {
-    color: rgb(86, 124, 153);
-    font-size: 1.5rem;
-    margin: 0 10px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin: 0 10px;
 }
 
 .stories-container {
-    box-sizing: border-box;
-		margin: 80px 20% 0px;
+  box-sizing: border-box;
+  margin: 80px 20% 0px;
 }
 
 .stories-container h1 {
-    font-size: 4rem;
-    text-align: center;
-    color: #000000;
-    font-family: quicksand;
+  font-size: 4rem;
+  text-align: center;
+  color: #000000;
+  font-family: quicksand;
+}
+
+.stories-container h3 {
+  font-size: 2rem;
+	font-style: italic;
+  text-align: center;
+  color: #000000;
+  font-family: quicksand;
 }
 
 .story-cards {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
 }
 
 .story-card {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 15px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-    transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.4s ease;
 }
 
 .story-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 .story-card img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .story-text {
-    padding: 0 20px 20px;
-    font-family: inter;
+  padding: 0 20px 20px;
+  font-family: inter;
 }
 
 .story-text h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .story-text p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .story-text a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(86, 124, 153);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .story-text a:hover {
-    background-color: rgb(66, 104, 133);
+  background-color: var(--primary-color);
+}
+
+/* Text Bounce */
+.text-bounce{
+	animation-name: bounce;
+  animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%, 100%   {transform: translateY(5px);}
+  50% {transform: translateY(-5px);}
 }
 
 @media screen and (orientation: portrait) {
-    .story-cards {
-        flex-direction: column;
-    }
-    .story-card {
-        margin: 20px 0px;
-    }
-		.stories-container {
-			margin: 80px 10% 0;
-		}
-    .story-image {
-        max-width: 100%;
-    }
-    .flex-container {
-        flex-direction: column;
-    }
-    .form-group {
-			flex-direction: column;
-		}
+  .story-cards {
+    flex-direction: column;
+  }
+  .story-card {
+    margin: 20px 0px;
+  }
+  .stories-container {
+    margin: 80px 10% 0;
+  }
+  .story-image {
+    max-width: 100%;
+  }
+	/* Changes container to vertical from horizontal on mobile devices */
+  .flex-container {
+    flex-direction: column;
+  }
+  .form-group {
+    flex-direction: column;
+  }
 }

@@ -1,44 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./Portfolio/styles.css" />
-        <title>About me</title>
-        <!-- Add favicon here -->
-    </head>
-    <body>
-        <div class="navbar">
-            <!-- Default/home page -->
-            <a href="index.html">Interactive Story</a>
-            <a href="aboutMe.html">About me</a>
-            <a href="contact.html">Contact</a>
-        </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Portfolio/styles.css" />
+    <link rel="stylesheet" href="./Portfolio/about-me-syles.css" /> <!-- Added style sheet specificly for social icons to have a different size on this page -->
+		<!-- Import Icons -->
+		<script src="https://kit.fontawesome.com/33eb24c1a2.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- Default/home page -->
+      <a href="index.html">Interactive Story</a>
+      <a href="aboutMe.html">About me</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
-        <div class="header">
-            <h1>Finya Swai</h1>
-        </div>
+    <div class="header">
+      <h1>Finya Swai</h1>
+    </div>
 
-        <div class="flex-container">
-            <img
-                src="./Images/finya.jpg"
-                alt="finya"
-                width="350"
-               
-            />
-            <div
-                class="portrait"
-                style="color: rgb(86, 124, 153); margin-top: 45px"
-                
-            
-            
-        
-            >
-                <p> I'm Finya Swai, a journalist from Chicago. I'm pursuing my Masters in Journalism at Northwestern University's Medill School of Journalism. Passionate about uncovering compelling stories, I thrive on deep research, data analysis, and crafting narratives that inform, engage, and inspire.</p>
+    <div class="flex-container about-me">
+			<div class="portrait">
+      	<img src="./Images/finya.jpg" alt="finya" width="350" />
+			</div>
+			<div style="color: rgb(86, 124, 153);" class="flex-container column blurb">
+				<p>
+					I'm Finya Swai, a journalist from Chicago. I'm pursuing my Masters in
+					Journalism at Northwestern University's Medill School of Journalism.
+					Passionate about uncovering compelling stories, I thrive on deep
+					research, data analysis, and crafting narratives that inform, engage,
+					and inspire.
+				</p>
+				<p>
+					With a strong foundation in reporting, interviewing, and multimedia
+					production, I aim to bring clarity and impact to complex topics.
+					Whether through long-form features, breaking news, or digital content,
+					I am dedicated to delivering fact-based, high-quality journalism that
+					makes a difference. I'm always eager to connect with fellow
+					journalists, media professionals, and storytellers.
+				</p>
+			</div>
+    </div>
 
-                <p>With a strong foundation in reporting, interviewing, and multimedia production, I aim to bring clarity and impact to complex topics. Whether through long-form features, breaking news, or digital content, I am dedicated to delivering fact-based, high-quality journalism that makes a difference. I'm always eager to connect with fellow journalists, media professionals, and storytellers.</p>
-                
-                
-            </div>
-        </div>
-    </body>
+		<h1 class="text-bounce" style="text-align: center; font-style: italic;">Listen To My Audio Stories <i class='fas fa-microphone' style='font-style: italic; font-size:30px; color: #ff5500'></i></h1>
+		
+		<div style="margin: auto; width: 50%;">
+			<iframe
+				width="100%"
+				height="300"
+				scrolling="no"
+				frameborder="no"
+				allow="autoplay"
+				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1987929216&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+			></iframe>
+			<div
+				style="
+					font-size: 10px;
+					color: #cccccc;
+					line-break: anywhere;
+					word-break: normal;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+						Garuda, Verdana, Tahoma, sans-serif;
+					font-weight: 100;
+				"
+			>
+				<a
+					href="https://soundcloud.com/finya-969971655"
+					title="Finya"
+					target="_blank"
+					style="color: #cccccc; text-decoration: none"
+					>Finya</a
+				>
+				·
+				<a
+					href="https://soundcloud.com/finya-969971655/sets/audio-reporting"
+					title="Audio Reporting"
+					target="_blank"
+					style="color: #cccccc; text-decoration: none"
+					>Audio Reporting</a
+				>
+			</div>
+		</div>
+
+		<!-- SVGs from ChatGPT -->
+		<!-- TODO: Link socail icons to actualy profiles rather than just the website -->
+		<div class="social-icons">
+			<a href="https://facebook.com" target="_blank" class="social-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path
+						d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+					></path>
+				</svg>
+			</a>
+			<a href="https://x.com" target="_blank" class="social-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path
+						d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+					></path>
+				</svg>
+			</a>
+			<a href="https://www.instagram.com" target="_blank" class="social-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+					<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+					<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+				</svg>
+			</a>
+			<a href="https://linkedin.com" target="_blank" class="social-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<rect x="2" y="2" width="20" height="20" rx="2" ry="2"></rect>
+					<path
+						d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+					></path>
+					<rect x="2" y="9" width="4" height="12"></rect>
+					<circle cx="4" cy="4" r="2"></circle>
+				</svg>
+			</a>
+		</div>
+
+		<footer class="footer">
+			<p class="subtext">AI Disclosure: I used ChatGPT to assist with technical issues  while coding. It was useful in breaking down my code line by line and suggesting areas where I could improve or edit my code. I also used it to generate social media icons for my contacts page.</p>
+		</footer >
+  </body>
 </html>
