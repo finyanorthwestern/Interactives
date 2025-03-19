@@ -287,6 +287,12 @@ p {
   background-color: var(--primary-color);
 }
 
+.sound-cloud-container {
+	margin: auto;
+	width: 50%;
+}
+
+
 /* Text Bounce */
 .text-bounce{
 	animation-name: bounce;
@@ -319,4 +325,8 @@ p {
   .form-group {
     flex-direction: column;
   }
+	.sound-cloud-container {
+		margin: auto;
+		width: 95%;
+	}	
 }
